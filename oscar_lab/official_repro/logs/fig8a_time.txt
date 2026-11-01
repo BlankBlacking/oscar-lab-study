@@ -1,0 +1,1 @@
+TIME name=fig8a elapsed_sec=1.77 user=1.51 sys=1.64 maxrss_kb=70656 exit=0

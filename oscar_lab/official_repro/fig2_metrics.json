@@ -1,0 +1,19 @@
+{
+  "figure": "fig2",
+  "metrics": {
+    "totalThroughputBitps": 84369400000.0,
+    "totalThroughputGbps": 84.3694,
+    "long_flow_overallFlowRate_gbps": 51.929169089,
+    "avgFctNs": 1161793,
+    "p99FctNs": 2512191,
+    "u_max": 9.83462,
+    "u_max_time_us_rel": 525.204,
+    "first_low_rate_us_rel": null,
+    "rate_recover_gt50Gbps_us_rel": null,
+    "fair_share_during_incast_gbps_nominal": 10.0,
+    "n_flows": 10
+  },
+  "paper_mapping": "Fig.2 goodput / fair share / INT U; shows stale reference \u2192 overshoot (U~9.5) and stall/recovery",
+  "source": "oscar-cc/output/oscar-nsdi26/experiments/fig2.json",
+  "provenance": "official artifact reused; quantitative extraction this pass"
+}

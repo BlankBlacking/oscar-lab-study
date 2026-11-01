@@ -1,0 +1,191 @@
+[
+  {
+    "name": "fig8a",
+    "wall_sec": 1.77,
+    "exit": 0,
+    "status": "ok",
+    "size_bytes": 4244937,
+    "output": "official_repro/fig8a_rerun.json",
+    "key": {
+      "totalThroughput_Gbps": 79.1305,
+      "avgFct_ms": 0.311149,
+      "p99Fct_ms": 0.312193
+    },
+    "overallStatistics": {
+      "totalThroughputBitps": 79130500000.0,
+      "totalRetxRatePkt": 0,
+      "totalRetxRateByte": 0,
+      "startTimeNs": 100000000,
+      "finishTimeNs": 100312193,
+      "avgFctNs": 311149,
+      "p95FctNs": 312193,
+      "p99FctNs": 312193,
+      "p999FctNs": 312193
+    },
+    "bit_identical_to_warehouse_baseline": true,
+    "warehouse_existed": true,
+    "timing_line": "TIME name=fig8a elapsed_sec=1.77 user=1.51 sys=1.64 maxrss_kb=70656 exit=0"
+  },
+  {
+    "name": "fig8b",
+    "wall_sec": 1.38,
+    "exit": 0,
+    "status": "ok",
+    "size_bytes": 4721606,
+    "output": "official_repro/fig8b_rerun.json",
+    "key": {
+      "totalThroughput_Gbps": 85.786,
+      "avgFct_ms": 0.31225,
+      "p99Fct_ms": 0.313162
+    },
+    "overallStatistics": {
+      "totalThroughputBitps": 85786000000.0,
+      "totalRetxRatePkt": 0,
+      "totalRetxRateByte": 0,
+      "startTimeNs": 100000000,
+      "finishTimeNs": 100313337,
+      "avgFctNs": 312250,
+      "p95FctNs": 313162,
+      "p99FctNs": 313162,
+      "p999FctNs": 313162
+    },
+    "bit_identical_to_warehouse_baseline": null,
+    "warehouse_existed": false,
+    "timing_line": "TIME name=fig8b elapsed_sec=1.38 user=1.44 sys=1.36 maxrss_kb=73500 exit=0"
+  },
+  {
+    "name": "fig9a",
+    "wall_sec": 2.25,
+    "exit": 0,
+    "status": "ok",
+    "size_bytes": 13374233,
+    "output": "official_repro/fig9a_rerun.json",
+    "key": {
+      "totalThroughput_Gbps": 87.9112,
+      "avgFct_ms": 0.445239,
+      "p99Fct_ms": 1.012111
+    },
+    "overallStatistics": {
+      "totalThroughputBitps": 87911200000.0,
+      "totalRetxRatePkt": 0,
+      "totalRetxRateByte": 0,
+      "startTimeNs": 100000000,
+      "finishTimeNs": 101012111,
+      "avgFctNs": 445239,
+      "p95FctNs": 1012111,
+      "p99FctNs": 1012111,
+      "p999FctNs": 1012111
+    },
+    "bit_identical_to_warehouse_baseline": true,
+    "warehouse_existed": true,
+    "timing_line": "TIME name=fig9a elapsed_sec=2.25 user=1.90 sys=1.41 maxrss_kb=108620 exit=0"
+  },
+  {
+    "name": "fig9b",
+    "wall_sec": 2.13,
+    "exit": 0,
+    "status": "ok",
+    "size_bytes": 12330720,
+    "output": "official_repro/fig9b_rerun.json",
+    "key": {
+      "totalThroughput_Gbps": 92.5383,
+      "avgFct_ms": 0.448582,
+      "p99Fct_ms": 1.012164
+    },
+    "overallStatistics": {
+      "totalThroughputBitps": 92538300000.0,
+      "totalRetxRatePkt": 0,
+      "totalRetxRateByte": 0,
+      "startTimeNs": 100000000,
+      "finishTimeNs": 101012164,
+      "avgFctNs": 448582,
+      "p95FctNs": 1012164,
+      "p99FctNs": 1012164,
+      "p999FctNs": 1012164
+    },
+    "bit_identical_to_warehouse_baseline": null,
+    "warehouse_existed": false,
+    "timing_line": "TIME name=fig9b elapsed_sec=2.13 user=1.98 sys=1.26 maxrss_kb=101272 exit=0"
+  },
+  {
+    "name": "fig1_dcqcn",
+    "wall_sec": 15.57,
+    "exit": 0,
+    "status": "ok",
+    "size_bytes": 129101161,
+    "output": "official_repro/fig1_dcqcn_rerun.json",
+    "key": {
+      "totalThroughput_Gbps": 75.5165,
+      "avgFct_ms": 5.112786,
+      "p99Fct_ms": 15.012141
+    },
+    "overallStatistics": {
+      "totalThroughputBitps": 75516500000.0,
+      "totalRetxRatePkt": 0,
+      "totalRetxRateByte": 0,
+      "startTimeNs": 100000000,
+      "finishTimeNs": 115012141,
+      "avgFctNs": 5112786,
+      "p95FctNs": 15012141,
+      "p99FctNs": 15012141,
+      "p999FctNs": 15012141
+    },
+    "bit_identical_to_warehouse_baseline": true,
+    "warehouse_existed": true,
+    "timing_line": "TIME name=fig1_dcqcn elapsed_sec=15.57 user=9.52 sys=2.89 maxrss_kb=577044 exit=0"
+  },
+  {
+    "name": "fig1_hpcc",
+    "wall_sec": 23.01,
+    "exit": 0,
+    "status": "ok",
+    "size_bytes": 221976716,
+    "output": "official_repro/fig1_hpcc_rerun.json",
+    "key": {
+      "totalThroughput_Gbps": 86.2873,
+      "avgFct_ms": 5.111887,
+      "p99Fct_ms": 15.012173
+    },
+    "overallStatistics": {
+      "totalThroughputBitps": 86287300000.0,
+      "totalRetxRatePkt": 0,
+      "totalRetxRateByte": 0,
+      "startTimeNs": 100000000,
+      "finishTimeNs": 115012173,
+      "avgFctNs": 5111887,
+      "p95FctNs": 15012173,
+      "p99FctNs": 15012173,
+      "p999FctNs": 15012173
+    },
+    "bit_identical_to_warehouse_baseline": true,
+    "warehouse_existed": true,
+    "timing_line": "TIME name=fig1_hpcc elapsed_sec=23.01 user=11.75 sys=4.62 maxrss_kb=1116184 exit=0"
+  },
+  {
+    "name": "fig1_poseidon",
+    "wall_sec": 18.29,
+    "exit": 0,
+    "status": "ok",
+    "size_bytes": 143952639,
+    "output": "official_repro/fig1_poseidon_rerun.json",
+    "key": {
+      "totalThroughput_Gbps": 84.3781,
+      "avgFct_ms": 5.115411,
+      "p99Fct_ms": 15.01215
+    },
+    "overallStatistics": {
+      "totalThroughputBitps": 84378100000.0,
+      "totalRetxRatePkt": 0,
+      "totalRetxRateByte": 0,
+      "startTimeNs": 100000000,
+      "finishTimeNs": 115012150,
+      "avgFctNs": 5115411,
+      "p95FctNs": 15012150,
+      "p99FctNs": 15012150,
+      "p999FctNs": 15012150
+    },
+    "bit_identical_to_warehouse_baseline": true,
+    "warehouse_existed": true,
+    "timing_line": "TIME name=fig1_poseidon elapsed_sec=18.29 user=11.27 sys=3.25 maxrss_kb=669884 exit=0"
+  }
+]

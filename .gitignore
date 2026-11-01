@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+.env.*
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Large / regenerable simulation traces
+*.pcap
+*.pcapng
+*.out
+*.core
+official_repro/**/traces/
+*.ns3-trace
+
+# Local notes (do not publish)
+GITHUB_URL.txt

@@ -1,0 +1,1 @@
+TIME name=fig1_poseidon elapsed_sec=18.29 user=11.27 sys=3.25 maxrss_kb=669884 exit=0

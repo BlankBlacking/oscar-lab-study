@@ -1,0 +1,93 @@
+{
+  "fig1_dcqcn": {
+    "exists": true,
+    "path": "output/oscar-nsdi26/experiments/fig1/dcqcn-1-9-100-5-15-a5.json",
+    "size": 129101080,
+    "mtime": 1793542458.4337218,
+    "overallStatistics": {
+      "totalThroughputBitps": 75516500000.0,
+      "totalRetxRatePkt": 0,
+      "totalRetxRateByte": 0,
+      "startTimeNs": 100000000,
+      "finishTimeNs": 115012141,
+      "avgFctNs": 5112786,
+      "p95FctNs": 15012141,
+      "p99FctNs": 15012141,
+      "p999FctNs": 15012141
+    }
+  },
+  "fig1_hpcc": {
+    "exists": true,
+    "path": "output/oscar-nsdi26/experiments/fig1/hpcc-1-9-100-5-15.json",
+    "size": 221976633,
+    "mtime": 1793542478.6057208,
+    "overallStatistics": {
+      "totalThroughputBitps": 86287300000.0,
+      "totalRetxRatePkt": 0,
+      "totalRetxRateByte": 0,
+      "startTimeNs": 100000000,
+      "finishTimeNs": 115012173,
+      "avgFctNs": 5111887,
+      "p95FctNs": 15012173,
+      "p99FctNs": 15012173,
+      "p999FctNs": 15012173
+    }
+  },
+  "fig1_poseidon": {
+    "exists": true,
+    "path": "output/oscar-nsdi26/experiments/fig1/poseidon-1-9-100-5-15-m005.json",
+    "size": 143952557,
+    "mtime": 1788751857.5253294,
+    "overallStatistics": {
+      "totalThroughputBitps": 84378100000.0,
+      "totalRetxRatePkt": 0,
+      "totalRetxRateByte": 0,
+      "startTimeNs": 100000000,
+      "finishTimeNs": 115012150,
+      "avgFctNs": 5115411,
+      "p95FctNs": 15012150,
+      "p99FctNs": 15012150,
+      "p999FctNs": 15012150
+    }
+  },
+  "fig8a": {
+    "exists": true,
+    "path": "output/oscar-nsdi26/experiments/fig8a.json",
+    "size": 4244853,
+    "mtime": 1793542443.8857222,
+    "overallStatistics": {
+      "totalThroughputBitps": 79130500000.0,
+      "totalRetxRatePkt": 0,
+      "totalRetxRateByte": 0,
+      "startTimeNs": 100000000,
+      "finishTimeNs": 100312193,
+      "avgFctNs": 311149,
+      "p95FctNs": 312193,
+      "p99FctNs": 312193,
+      "p999FctNs": 312193
+    }
+  },
+  "fig8b": {
+    "exists": false
+  },
+  "fig9a": {
+    "exists": true,
+    "path": "output/oscar-nsdi26/experiments/fig9a.json",
+    "size": 13374149,
+    "mtime": 1793542433.0337226,
+    "overallStatistics": {
+      "totalThroughputBitps": 87911200000.0,
+      "totalRetxRatePkt": 0,
+      "totalRetxRateByte": 0,
+      "startTimeNs": 100000000,
+      "finishTimeNs": 101012111,
+      "avgFctNs": 445239,
+      "p95FctNs": 1012111,
+      "p99FctNs": 1012111,
+      "p999FctNs": 1012111
+    }
+  },
+  "fig9b": {
+    "exists": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "fig8b",
+  "wall_sec": 1.38,
+  "exit": 0,
+  "output": "official_repro/fig8b_rerun.json",
+  "size_bytes": 4721606,
+  "bit_identical_to_warehouse_baseline": null,
+  "warehouse_existed": false,
+  "key": {
+    "totalThroughput_Gbps": 85.786,
+    "avgFct_ms": 0.31225,
+    "p99Fct_ms": 0.313162
+  },
+  "overallStatistics": {
+    "totalThroughputBitps": 85786000000.0,
+    "totalRetxRatePkt": 0,
+    "totalRetxRateByte": 0,
+    "startTimeNs": 100000000,
+    "finishTimeNs": 100313337,
+    "avgFctNs": 312250,
+    "p95FctNs": 313162,
+    "p99FctNs": 313162,
+    "p999FctNs": 313162
+  }
+}

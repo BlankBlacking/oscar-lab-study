@@ -1,0 +1,25 @@
+{
+  "name": "fig1_dcqcn",
+  "wall_sec": 15.57,
+  "exit": 0,
+  "output": "official_repro/fig1_dcqcn_rerun.json",
+  "size_bytes": 129101161,
+  "bit_identical_to_warehouse_baseline": true,
+  "warehouse_existed": true,
+  "key": {
+    "totalThroughput_Gbps": 75.5165,
+    "avgFct_ms": 5.112786,
+    "p99Fct_ms": 15.012141
+  },
+  "overallStatistics": {
+    "totalThroughputBitps": 75516500000.0,
+    "totalRetxRatePkt": 0,
+    "totalRetxRateByte": 0,
+    "startTimeNs": 100000000,
+    "finishTimeNs": 115012141,
+    "avgFctNs": 5112786,
+    "p95FctNs": 15012141,
+    "p99FctNs": 15012141,
+    "p999FctNs": 15012141
+  }
+}

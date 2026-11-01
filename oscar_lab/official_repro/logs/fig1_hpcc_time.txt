@@ -1,0 +1,1 @@
+TIME name=fig1_hpcc elapsed_sec=23.01 user=11.75 sys=4.62 maxrss_kb=1116184 exit=0

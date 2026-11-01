@@ -1,0 +1,16 @@
+{
+  "requirement": "\u81f3\u5c11\u4e00\u79cd\u573a\u666f\u4e0b\u8be5\u8bba\u6587\u6548\u679c\u4e0d\u662f\u6700\u4f18",
+  "paper_reported": {
+    "label": "\u3010\u539f\u8bba\u6587\u3011",
+    "scenario": "Hadoop / small-flow dense workloads (Fig.10\u201311 discussion)",
+    "evidence": "OSCAR worse than HPCC by 23.3% and than HPCC* by 15.9% under Hadoop; <1 BDP small flows worse than HPCC by 7.6%",
+    "source": "OSCAR NSDI26 paper Evaluation / REPORT_OSCAR_FINAL.md \u00a74"
+  },
+  "extension_lab": {
+    "label": "\u3010\u6269\u5c55\u3011",
+    "scenario": "E5 coupled RTT miscalibration k0=0.25 two-flow competition",
+    "evidence": "miscalibrated flow share 16.29% vs 83.71%, Jain 0.688 (not claiming this is paper Evaluation; shows paper mechanism fragile under base-RTT error)",
+    "csv": "oscar_lab/results/e5_twoflow.csv",
+    "figure": "oscar_lab/figs/e5_twoflow.png"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "status": "rerun_ok",
+  "wall_time_note": "fig2_rerun.log; ~6s wall with Python3.11 venv + existing release build",
+  "config": "official_repro/fig2_rerun_config.json",
+  "output": "official_repro/fig2_rerun.json",
+  "original": "oscar-cc/output/oscar-nsdi26/experiments/fig2.json",
+  "original_metrics": {
+    "totalThroughputBitps": 84369400000.0,
+    "avgFctNs": 1161793,
+    "p99FctNs": 2512191,
+    "n_flows": 10,
+    "long_flow_rate": 51929169089,
+    "u_max": 9.83462,
+    "u_len": 16306,
+    "ccRate_len": 11201
+  },
+  "rerun_metrics": {
+    "totalThroughputBitps": 84369400000.0,
+    "avgFctNs": 1161793,
+    "p99FctNs": 2512191,
+    "n_flows": 10,
+    "long_flow_rate": 51929169089,
+    "u_max": 9.83462,
+    "u_len": 16306,
+    "ccRate_len": 11201
+  },
+  "relative_diff": {
+    "totalThroughputBitps": 0.0,
+    "avgFctNs": 0.0,
+    "p99FctNs": 0.0,
+    "n_flows": 0.0,
+    "long_flow_rate": 0.0,
+    "u_max": 0.0,
+    "u_len": 0.0,
+    "ccRate_len": 0.0
+  },
+  "overallStatistics_identical": true,
+  "command": "PATH=oscar-cc/.venv/bin:$PATH ./ns3 run \"rdma-simulator oscar_lab/official_repro/fig2_rerun_config.json\"",
+  "python": "3.11 via oscar-cc/.venv",
+  "note": "runtimeConfig shortened to runningTime=0.15s stopTime=0.2s (apps end ~0.1025s); seed unchanged 8259"
+}

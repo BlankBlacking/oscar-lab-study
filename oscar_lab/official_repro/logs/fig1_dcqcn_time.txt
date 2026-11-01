@@ -1,0 +1,1 @@
+TIME name=fig1_dcqcn elapsed_sec=15.57 user=9.52 sys=2.89 maxrss_kb=577044 exit=0

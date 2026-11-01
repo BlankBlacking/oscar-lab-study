@@ -1,0 +1,25 @@
+{
+  "name": "fig1_poseidon",
+  "wall_sec": 18.29,
+  "exit": 0,
+  "output": "official_repro/fig1_poseidon_rerun.json",
+  "size_bytes": 143952639,
+  "bit_identical_to_warehouse_baseline": true,
+  "warehouse_existed": true,
+  "key": {
+    "totalThroughput_Gbps": 84.3781,
+    "avgFct_ms": 5.115411,
+    "p99Fct_ms": 15.01215
+  },
+  "overallStatistics": {
+    "totalThroughputBitps": 84378100000.0,
+    "totalRetxRatePkt": 0,
+    "totalRetxRateByte": 0,
+    "startTimeNs": 100000000,
+    "finishTimeNs": 115012150,
+    "avgFctNs": 5115411,
+    "p95FctNs": 15012150,
+    "p99FctNs": 15012150,
+    "p999FctNs": 15012150
+  }
+}

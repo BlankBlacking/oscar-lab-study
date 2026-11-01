@@ -1,0 +1,25 @@
+{
+  "name": "fig9a",
+  "wall_sec": 2.25,
+  "exit": 0,
+  "output": "official_repro/fig9a_rerun.json",
+  "size_bytes": 13374233,
+  "bit_identical_to_warehouse_baseline": true,
+  "warehouse_existed": true,
+  "key": {
+    "totalThroughput_Gbps": 87.9112,
+    "avgFct_ms": 0.445239,
+    "p99Fct_ms": 1.012111
+  },
+  "overallStatistics": {
+    "totalThroughputBitps": 87911200000.0,
+    "totalRetxRatePkt": 0,
+    "totalRetxRateByte": 0,
+    "startTimeNs": 100000000,
+    "finishTimeNs": 101012111,
+    "avgFctNs": 445239,
+    "p95FctNs": 1012111,
+    "p99FctNs": 1012111,
+    "p999FctNs": 1012111
+  }
+}

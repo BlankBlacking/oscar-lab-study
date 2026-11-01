@@ -1,0 +1,25 @@
+{
+  "name": "fig1_hpcc",
+  "wall_sec": 23.01,
+  "exit": 0,
+  "output": "official_repro/fig1_hpcc_rerun.json",
+  "size_bytes": 221976716,
+  "bit_identical_to_warehouse_baseline": true,
+  "warehouse_existed": true,
+  "key": {
+    "totalThroughput_Gbps": 86.2873,
+    "avgFct_ms": 5.111887,
+    "p99Fct_ms": 15.012173
+  },
+  "overallStatistics": {
+    "totalThroughputBitps": 86287300000.0,
+    "totalRetxRatePkt": 0,
+    "totalRetxRateByte": 0,
+    "startTimeNs": 100000000,
+    "finishTimeNs": 115012173,
+    "avgFctNs": 5111887,
+    "p95FctNs": 15012173,
+    "p99FctNs": 15012173,
+    "p999FctNs": 15012173
+  }
+}

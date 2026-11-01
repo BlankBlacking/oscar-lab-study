@@ -1,0 +1,61 @@
+{
+  "figure": "fig1",
+  "metric": "convergence_rate_trajectory",
+  "time_shift_ns": 100000000.0,
+  "algos": {
+    "dcqcn": {
+      "n_samples": 186,
+      "t_span_us": [
+        0.0,
+        12347.283
+      ],
+      "r_norm_min": 0.001,
+      "r_norm_max": 1.0,
+      "mean_norm_0_1000us": 1.0,
+      "mean_norm_1000_3000us": 0.1283889192408696,
+      "mean_norm_3000_6000us": 0.11219956162789474,
+      "mean_norm_6000_12000us": 0.7357517913189423,
+      "throughput_gbps": 75.5165,
+      "avgFct_us": 5112.786,
+      "p99Fct_us": 15012.141,
+      "settle_to_1_after_4000us": 9872.283
+    },
+    "poseidon": {
+      "n_samples": 52014,
+      "t_span_us": [
+        0.0,
+        10816.544
+      ],
+      "r_norm_min": 0.22925532071,
+      "r_norm_max": 1.0,
+      "mean_norm_0_1000us": 0.999996715385,
+      "mean_norm_1000_3000us": 0.3195732478796297,
+      "mean_norm_3000_6000us": 0.36220283671599673,
+      "mean_norm_6000_12000us": 0.8287523348909179,
+      "throughput_gbps": 84.3781,
+      "avgFct_us": 5115.411,
+      "p99Fct_us": 15012.15,
+      "settle_to_1_after_4000us": 7928.463
+    },
+    "hpcc": {
+      "n_samples": 90972,
+      "t_span_us": [
+        0.0,
+        15012.173
+      ],
+      "r_norm_min": 0.0151322667,
+      "r_norm_max": 1.0,
+      "mean_norm_0_1000us": 0.9505384022381028,
+      "mean_norm_1000_3000us": 0.08974925267337953,
+      "mean_norm_3000_6000us": 0.7648279297157937,
+      "mean_norm_6000_12000us": 0.9506326211893519,
+      "throughput_gbps": 86.2873,
+      "avgFct_us": 5111.887,
+      "p99Fct_us": 15012.173,
+      "settle_to_1_after_4000us": 5076.141
+    }
+  },
+  "paper_mapping": "Fig.1 accel/decel convergence order: DCQCN additive slow vs Poseidon/HPCC faster paths",
+  "source": "official_repro/fig1_*_rerun.json (this pass re-run)",
+  "provenance": "2026-11-01 re-ran official configs seed=8259; settle metrics re-extracted from rerun outputs"
+}

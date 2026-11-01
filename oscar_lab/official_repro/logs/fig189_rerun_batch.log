@@ -1,0 +1,119 @@
+===== START fig8a 2026-11-01T22:19:28+08:00 =====
+100034us, u: 1.27156 rate: 0.747611
+100037us, u: 1.04582 rate: 0.908877
+100048us, u: 1.15245 rate: 0.616777
+100052us, u: 1.33683 rate: 0.646383
+100065us, u: 1.08101 rate: 0.542526
+100069us, u: 0.331963 rate: 1
+100077us, u: 1.00157 rate: 0.515091
+100084us, u: 1.24659 rate: 0.762577
+100095us, u: 1.24031 rate: 0.395028
+100100us, u: 0.803391 rate: 0.902237
+100107us, u: 0.766158 rate: 0.490316
+100113us, u: 0.980213 rate: 0.874928
+100123us, u: 1.32112 rate: 0.35308
+100129us, u: 1.03353 rate: 0.804714
+100135us, u: 0.937729 rate: 0.3582
+100141us, u: 1.04727 rate: 0.73047
+100149us, u: 1.1615 rate: 0.293475
+100154us, u: 1.04582 rate: 0.664043
+100164us, u: 0.526052 rate: 0.530488
+100167us, u: 0.989091 rate: 0.638298
+100178us, u: 1.16493 rate: 0.433112
+100181us, u: 1.16866 rate: 0.519371
+100191us, u: 0.853333 rate: 0.482675
+100193us, u: 0.65536 rate: 0.753373
+100204us, u: 1.09006 rate: 0.421157
+100207us, u: 1.20918 rate: 0.592391
+100218us, u: 1.00941 rate: 0.396868
+100220us, u: 0.276183 rate: 1
+100230us, u: 0.828952 rate: 0.45532
+100233us, u: 1.1082 rate: 0.857744
+100249us, u: 1.05827 rate: 0.409235
+100253us, u: 0.481857 rate: 1
+100261us, u: 0.987567 rate: 0.394168
+100268us, u: 1.25856 rate: 0.755331
+100277us, u: 1.1621 rate: 0.322727
+100281us, u: 0.815575 rate: 0.880327
+100289us, u: 0.940777 rate: 0.326391
+100293us, u: 1.00157 rate: 0.835498
+100307us, u: 1.095 rate: 0.283669
+100308us, u: 1.06146 rate: 0.748269
+Total used time: 0.511857s
+TIME name=fig8a elapsed_sec=1.77 user=1.51 sys=1.64 maxrss_kb=70656 exit=0
+-rwxrwxrwx 1 user user 4244937 Nov  1 22:19 official_repro/fig8a_rerun.json
+===== END fig8a 2026-11-01T22:19:30+08:00 exit=0 wall= =====
+===== START fig8b 2026-11-01T22:19:30+08:00 =====
+100034us, u: 1.27156 rate: 0.747611
+100037us, u: 1.04582 rate: 0.460754
+100048us, u: 1.18765 rate: 0.598515
+100053us, u: 1.02122 rate: 0.479939
+100061us, u: 1.16672 rate: 0.482566
+100068us, u: 1.00703 rate: 0.489072
+100074us, u: 1.00157 rate: 0.483663
+100081us, u: 0.99968 rate: 0.491529
+100086us, u: 0.972514 rate: 0.478091
+100093us, u: 1.03333 rate: 0.491704
+100098us, u: 0.975238 rate: 0.466219
+100106us, u: 1.01292 rate: 0.613831
+100111us, u: 0.998737 rate: 0.556409
+100118us, u: 0.994743 rate: 0.540972
+100125us, u: 1.16833 rate: 0.452932
+100131us, u: 1.04727 rate: 0.473194
+100139us, u: 1.1122 rate: 0.552168
+100144us, u: 1.06905 rate: 0.571564
+100152us, u: 1.01394 rate: 0.506371
+100156us, u: 0.994743 rate: 0.523511
+100165us, u: 0.914981 rate: 0.520014
+100168us, u: 1.00157 rate: 0.493806
+100177us, u: 0.503607 rate: 0.981451
+100181us, u: 1.02166 rate: 0.466582
+100190us, u: 1.00748 rate: 0.925955
+100194us, u: 1.0083 rate: 0.448584
+100203us, u: 1.07419 rate: 0.819406
+100208us, u: 1.08004 rate: 0.436397
+100216us, u: 1.11503 rate: 0.675521
+100221us, u: 1.06965 rate: 0.693908
+100231us, u: 1.14392 rate: 0.557831
+100234us, u: 1.07984 rate: 0.711115
+100245us, u: 1.03011 rate: 0.518273
+100248us, u: 1.13835 rate: 0.590902
+100257us, u: 0.971679 rate: 0.50721
+100260us, u: 0.660645 rate: 0.883157
+100270us, u: 1.09665 rate: 0.408717
+100273us, u: 1.05265 rate: 0.902984
+100284us, u: 1.04945 rate: 0.483266
+100286us, u: 1.00157 rate: 0.897425
+100297us, u: 1.09039 rate: 0.562752
+100300us, u: 1.1011 rate: 0.666308
+100310us, u: 1.06797 rate: 0.501091
+Total used time: 0.526112s
+TIME name=fig8b elapsed_sec=1.38 user=1.44 sys=1.36 maxrss_kb=73500 exit=0
+-rwxrwxrwx 1 user user 4721606 Nov  1 22:19 official_repro/fig8b_rerun.json
+===== END fig8b 2026-11-01T22:19:31+08:00 exit=0 wall= =====
+===== START fig9a 2026-11-01T22:19:31+08:00 =====
+Total used time: 1.40728s
+TIME name=fig9a elapsed_sec=2.25 user=1.90 sys=1.41 maxrss_kb=108620 exit=0
+-rwxrwxrwx 1 user user 13374233 Nov  1 22:19 official_repro/fig9a_rerun.json
+===== END fig9a 2026-11-01T22:19:34+08:00 exit=0 wall= =====
+===== START fig9b 2026-11-01T22:19:34+08:00 =====
+Total used time: 1.28081s
+TIME name=fig9b elapsed_sec=2.13 user=1.98 sys=1.26 maxrss_kb=101272 exit=0
+-rwxrwxrwx 1 user user 12330720 Nov  1 22:19 official_repro/fig9b_rerun.json
+===== END fig9b 2026-11-01T22:19:36+08:00 exit=0 wall= =====
+===== START fig1_dcqcn 2026-11-01T22:19:36+08:00 =====
+Total used time: 14.5983s
+TIME name=fig1_dcqcn elapsed_sec=15.57 user=9.52 sys=2.89 maxrss_kb=577044 exit=0
+-rwxrwxrwx 1 user user 129101161 Nov  1 22:19 official_repro/fig1_dcqcn_rerun.json
+===== END fig1_dcqcn 2026-11-01T22:19:52+08:00 exit=0 wall= =====
+===== START fig1_hpcc 2026-11-01T22:19:52+08:00 =====
+Total used time: 21.8874s
+TIME name=fig1_hpcc elapsed_sec=23.01 user=11.75 sys=4.62 maxrss_kb=1116184 exit=0
+-rwxrwxrwx 1 user user 221976716 Nov  1 22:20 official_repro/fig1_hpcc_rerun.json
+===== END fig1_hpcc 2026-11-01T22:20:15+08:00 exit=0 wall= =====
+===== START fig1_poseidon 2026-11-01T22:20:15+08:00 =====
+Total used time: 17.2986s
+TIME name=fig1_poseidon elapsed_sec=18.29 user=11.27 sys=3.25 maxrss_kb=669884 exit=0
+-rwxrwxrwx 1 user user 143952639 Nov  1 22:20 official_repro/fig1_poseidon_rerun.json
+===== END fig1_poseidon 2026-11-01T22:20:33+08:00 exit=0 wall= =====
+ALL_DONE 2026-11-01T22:20:33+08:00
