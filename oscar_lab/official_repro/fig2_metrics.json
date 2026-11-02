@@ -14,6 +14,6 @@
     "n_flows": 10
   },
   "paper_mapping": "Fig.2 goodput / fair share / INT U; shows stale reference \u2192 overshoot (U~9.5) and stall/recovery",
-  "source": "oscar-cc/output/oscar-nsdi26/experiments/fig2.json",
-  "provenance": "official artifact reused; quantitative extraction this pass"
+  "source": "official_repro/fig2_rerun.json (this pass re-run; overallStatistics bit-identical to warehouse fig2.json)",
+  "provenance": "re-ran official config (shortened stopTime); metrics from rerun (== warehouse overallStatistics). Prefer fig2_rerun_compare.json for identity proof."
 }

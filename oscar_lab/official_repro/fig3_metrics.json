@@ -42,7 +42,7 @@
     "warehouse": "oscar-cc/output/oscar-nsdi26/experiments/fig3.json"
   },
   "provenance": "MSE recomputed from warehouse traces with fig3.ipynb ideal_r; official fig3 re-run matched warehouse overallStatistics",
-  "note": "Absolute MSE depends on windowing; direction (BLS << TIMELY) is the claim we verify. Paper numbers cited separately.",
-  "honesty": "Offline MSE vs notebook piecewise ideal_r did NOT reproduce paper scalars 0.0058/0.079; likely oracle/window mismatch. We therefore do NOT claim MSE scalar reproduction. Fig.3 contribution to multi-metric coverage is: (1) identical official re-run of the microbench harness; (2) warehouse fig3a/b.pdf + traces for delay/gradient observability. Primary quantitative multi-metric claims are Fig.1 convergence trajectories and Fig.2 throughput/U/FCT.",
+  "note": "Harness re-ran; overallStatistics bit-identical to warehouse. Offline piecewise MSE vs notebook ideal_r did NOT recover paper scalars 0.0058/0.079, and in this windowing BLS_mse > timely_mse (opposite of paper direction). Do NOT claim MSE reproduction or BLS<<TIMELY from these offline numbers.",
+  "honesty": "Offline MSE vs notebook piecewise ideal_r did NOT reproduce paper scalars 0.0058/0.079 and did NOT recover the paper direction (BLS << TIMELY). Likely oracle/window mismatch. We therefore do NOT claim MSE scalar or directional reproduction. Fig.3 contribution to multi-metric coverage is: (1) identical official re-run of the microbench harness; (2) upstream warehouse fig3a/b.pdf + traces for delay/gradient observability. Primary quantitative multi-metric claims are Fig.1 convergence trajectories and Fig.2 throughput/U/FCT.",
   "metrics_status": "exploratory_only_do_not_cite_as_paper_match"
 }

@@ -1,9 +1,9 @@
 # Official reproduction summary (minimum bar)
 
 ## Status
-**PDF reproduction clause for OSCAR: MET (minimum)** — re-ran official Fig.1 (DCQCN/HPCC/Poseidon), Fig.2, Fig.3, Fig.8a/b, Fig.9a/b microbenches with Python 3.11 venv; Fig.1/2/3/8a/9a `overallStatistics` **bit-identical** to warehouse baselines where prior outputs existed; Fig.8b/9b are first local runs (no prior warehouse JSON). Extracted ≥2 Evaluation metrics; documented non-optimal scenario.
+**PDF reproduction clause for OSCAR: MET (minimum)** — re-ran official Fig.1 (DCQCN/HPCC/Poseidon), Fig.2, Fig.3, Fig.8a/b, Fig.9a/b microbenches with Python 3.11 venv; Fig.1/2/3/8a/9a **`overallStatistics` bit-identical** to warehouse baselines where prior outputs existed (not full trajectory JSON identity; Fig.1 full traces omitted from this pack as >50 MB); Fig.8b/9b are first local runs (no prior warehouse JSON). Fig.2/3 used **shortened stopTime** (still bit-identical on `overallStatistics`); Fig.1/8/9 used official runtime. `compare_fig*.png` are **prior warehouse overlays**, not new renders from this-pass traces. Extracted ≥2 Evaluation metrics; documented non-optimal scenario.
 
-Not claimed: full Evaluation, fat-tree Fig.10–12, testbed, DPDK overhead, or Fig.3 MSE scalar match.
+Not claimed: full Evaluation, fat-tree Fig.10–12, testbed, DPDK overhead, or Fig.3 MSE scalar/direction match.
 
 ## Commands (Python 3.11 venv required)
 
@@ -48,7 +48,7 @@ Total wall ≈ **64.4 s** for Fig.1+8+9. Timing logs: `logs/*_time.txt`. Compact
 | Throughput / goodput | Fig. 2 | **re-run identical** `fig2_rerun_compare.json` | totalThroughput **84.3694 Gbps**; long-flow overallFlowRate **51.93 Gbps** |
 | INT utilization U (overshoot) | Fig. 2 | same re-run | **u_max = 9.83462** |
 | FCT (microbench) | Fig. 2 overallStatistics | same re-run | avgFct **1.162 ms**; p99 **2.512 ms** |
-| Delay/gradient observability | Fig. 3 | re-run identical + `fig3a/b.pdf` | harness verified; MSE scalars **not** claimed |
+| Delay/gradient observability | Fig. 3 | re-run identical harness (`fig3_rerun.json`); upstream `fig3a/b.pdf` | harness verified; MSE scalars/direction **not** claimed |
 | Ref-state ablation (two-flow) | Fig. 8a/b | **re-run** `fig8a/b_rerun.json` | thr 79.13 / 85.79 Gbps |
 | BLS/control ablation | Fig. 9a/b | **re-run** `fig9a/b_rerun.json` | thr 87.91 / 92.54 Gbps |
 
@@ -62,5 +62,5 @@ See `nonoptimal_scenario.json`.
 - `fig{1_* ,8a,8b,9a,9b}_rerun.json` + `*_rerun_config.json` + `*_summary.json`
 - `fig1_metrics.json`, `fig2_metrics.json`, `fig2_rerun_compare.json`, `fig3_metrics.json`
 - `fig2_rerun*.json/log`, `fig3_rerun*.json/log`
-- `compare_fig1.png`, `compare_fig2a.png`, `compare_fig2b.png`
-- Official PDFs: `<OSCAR_NS3_ROOT>/config/oscar-nsdi26/figures/` (not shipped here)
+- `compare_fig1.png`, `compare_fig2a.png`, `compare_fig2b.png` (**prior warehouse overlays**, not this-pass re-renders)
+- Official PDFs: `<OSCAR_NS3_ROOT>/config/oscar-nsdi26/figures/` (upstream only; not shipped here)

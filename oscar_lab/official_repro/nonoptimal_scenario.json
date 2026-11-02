@@ -4,7 +4,7 @@
     "label": "\u3010\u539f\u8bba\u6587\u3011",
     "scenario": "Hadoop / small-flow dense workloads (Fig.10\u201311 discussion)",
     "evidence": "OSCAR worse than HPCC by 23.3% and than HPCC* by 15.9% under Hadoop; <1 BDP small flows worse than HPCC by 7.6%",
-    "source": "OSCAR NSDI26 paper Evaluation / REPORT_OSCAR_FINAL.md \u00a74"
+    "source": "OSCAR NSDI26 paper \u00a76 Evaluations (Fig.10\u201311 discussion); see also EVAL_REPRO_STATUS.md / EVALUATION_COVERAGE.md"
   },
   "extension_lab": {
     "label": "\u3010\u6269\u5c55\u3011",

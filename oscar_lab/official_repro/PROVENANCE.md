@@ -34,8 +34,8 @@ Per-config timing: `logs/*_time.txt`. Aggregate table: `summaries/fig189_rerun_t
 Settle metrics re-extracted from Fig.1 reruns → `fig1_metrics.json` (settle DCQCN/Poseidon/HPCC ≈ 9872 / 7928 / 5076 μs; identical to prior extract).
 
 ## What was reused (not re-run)
-- Official PDFs `config/oscar-nsdi26/figures/fig{1,2a,2b,3a,3b,8a,8b,9a,9b}.pdf`
-- Compare PNGs from `oscar-cc/reproduction_compare/` (copied earlier): `compare_fig1.png`, `compare_fig2a.png`, `compare_fig2b.png`
+- Official PDFs `config/oscar-nsdi26/figures/fig{1,2a,2b,3a,3b,8a,8b,9a,9b}.pdf` (upstream only; not in this pack)
+- Compare PNGs from `oscar-cc/reproduction_compare/` (copied earlier; **prior warehouse overlays**, file dates older than this-pass reruns — do **not** read as newly rendered from this-pass traces): `compare_fig1.png`, `compare_fig2a.png`, `compare_fig2b.png`
 - Fig.10–12 / testbed / DPDK — **not** re-run
 
 ## Metrics covered (≥2 Evaluation metrics)
@@ -49,9 +49,11 @@ See `nonoptimal_scenario.json` — paper Hadoop/small-flow + lab E5 coupled misc
 
 ## Honesty
 - Not a full Evaluation / fat-tree / 4-hour `run_all.sh` reproduction
-- `oscar_lab` E3/E5/F1 remain **【扩展】**, not official reproduction
+- `oscar_lab` E3/E5/F1 remain **【扩展】** mitigation/probes, not official reproduction / not an OSCAR patch
 - Fig.10–12 FCT / testbed / DPDK overhead not re-run
 - Fig.8b/9b had no prior warehouse outputs to bit-compare
+- Bit-identical claims apply to **`overallStatistics`** (where a prior existed), not to full trajectory JSON; Fig.1 full traces omitted from upload pack
+- Fig.2/3 bit-identical holds under **shortened stopTime**, not “full official runtime”
 
 
 ## Upload-pack note (large traces omitted)

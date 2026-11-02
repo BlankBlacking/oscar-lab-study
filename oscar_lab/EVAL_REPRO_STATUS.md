@@ -1,8 +1,8 @@
 # OSCAR Evaluation ↔ 复现对照状态
 
 > 状态日期：2026-11-01。证据分层：**【原论文】** / **【复现】**（官方 `oscar-cc` ns-3）/ **【扩展】**（`oscar_lab` 简化模型）。  
-> 主来源：`EVALUATION_COVERAGE.md`、`official_repro/{SUMMARY,PROVENANCE}.md`、`REPORT_OSCAR_FINAL.md` §4、官方 `config/oscar-nsdi26/` figure 列表。  
-> **诚实边界**：Fig.1/2/3/8a/b/9a/b **已重跑**；大规模 Evaluation（Fig.10–12 / `run_all.sh`）**未做**。
+> 主来源：`EVALUATION_COVERAGE.md`、`official_repro/{SUMMARY,PROVENANCE}.md`、官方 `config/oscar-nsdi26/` figure 列表（上游 NASA-NJU/OSCAR）。  
+> **诚实边界**：Fig.1/2/3/8a/b/9a/b **已重跑**；大规模 Evaluation（Fig.10–12 / `run_all.sh`）**未做**；本仓不声称全量 Evaluation。
 
 ---
 
@@ -49,15 +49,15 @@
 
 | 图 / 实验 | 指标 | 我们的状态 | 证据 | 备注 |
 |---|---|---|---|---|
-| **Fig. 1** 收敛阶分类（DCQCN/Poseidon/HPCC） | 归一化 rate/window；扰动后 settle-to-~1 时间 | **【复现】已重跑** | `fig1_{dcqcn,hpcc,poseidon}_rerun.json`；`fig1_metrics.json`；`compare_fig1.png`；`figures/fig1.pdf` | settle≈9872 / 7928 / 5076 μs；thr 75.52 / 86.29 / 84.38 Gbps；~15.6 / 23.0 / 18.3 s；`overallStatistics` 与仓库 **bit-identical** |
-| **Fig. 2** HPCC 旧参考状态过度反应 | goodput/吞吐、fair share、INT \(U\)、微基准 FCT | **【复现】已重跑** | `fig2_rerun.json` / `fig2_rerun_compare.json`；与仓库 `overallStatistics` **bit-identical** | 吞吐 **84.3694 Gbps**；\(u_{\max}=9.83462\)；avg/p99 FCT **1.162 / 2.512 ms**；~5.2 s |
-| **Fig. 3** 延迟/梯度可观测性 | oracle vs estimator；估计误差 / MSE | **【复现】harness 已重跑**；MSE 标量 **不宣称** | `fig3_rerun.json`；`fig3a/b.pdf`；`fig3_metrics.json` | ~4.8 s，与仓库一致。论文 MSE 0.0058 vs 0.079；离线重算未对齐 → 不宣称 MSE 数值复现 |
+| **Fig. 1** 收敛阶分类（DCQCN/Poseidon/HPCC） | 归一化 rate/window；扰动后 settle-to-~1 时间 | **【复现】已重跑** | 本仓：`fig1_metrics.json`；`fig1_{dcqcn,hpcc,poseidon}_summary.json`；`summaries/fig1_*_overallStatistics.json`；`compare_fig1.png`（prior overlay）。全量 `fig1_*_rerun.json`（>50 MB）与 `figures/fig1.pdf` **未随本仓发布**（上游可 regen） | settle≈9872 / 7928 / 5076 μs（DCQCN/Poseidon/HPCC）；thr **75.52 / 84.38 / 86.29** Gbps；~15.6 / 18.3 / 23.0 s；`overallStatistics` 与仓库 **bit-identical** |
+| **Fig. 2** HPCC 旧参考状态过度反应 | goodput/吞吐、fair share、INT \(U\)、微基准 FCT | **【复现】已重跑**（短 stopTime） | `fig2_rerun.json` / `fig2_rerun_compare.json`；与仓库 `overallStatistics` **bit-identical** | 吞吐 **84.3694 Gbps**；\(u_{\max}=9.83462\)；avg/p99 FCT **1.162 / 2.512 ms**；~5.2 s |
+| **Fig. 3** 延迟/梯度可观测性 | oracle vs estimator；估计误差 / MSE | **【复现】harness 已重跑**；MSE **未复现 / 不宣称** | `fig3_rerun.json`；`fig3_metrics.json`（offline MSE exploratory only）。官方 `fig3a/b.pdf` 仅在上游 | ~4.8 s，与仓库一致。论文 MSE 0.0058 vs 0.079；离线重算未对齐且方向亦未恢复 → 不宣称 MSE |
 | **测试床 §6.2**（Fig.6–7 等） | 收敛时间、fair share、BLS 噪声鲁棒、all-to-all 完成时间 | **未复现** | 仅【原论文】§6.1/§6.2 | 无 7 机 40 Gb/s 硬件。论文：~12 μs RTT 场景约 **25 μs** vs HPCC **~80 μs** |
-| **Fig. 8** 参考状态机制消融 | 两流速率轨迹 | **【复现】已重跑** | `fig8a_rerun.json` / `fig8b_rerun.json`；`figures/fig8a/b.pdf` | thr **79.13 / 85.79 Gbps**；~1.8 / 1.4 s。8a 与仓库 identical；8b 无 prior warehouse |
-| **Fig. 9** BLS/控制消融 | 吞吐、队列长度 | **【复现】已重跑** | `fig9a_rerun.json` / `fig9b_rerun.json`；`figures/fig9a/b.pdf` | thr **87.91 / 92.54 Gbps**；~2.3 / 2.1 s。9a 与仓库 identical；9b 无 prior warehouse |
-| **Fig. 10** 大规模真实 workload | 平均/尾 FCT slowdown（CacheFollower 等） | **未复现** | `figures/fig10a/b/c.pdf`；配置在 `experiments/fig10*` | 全套 fat-tree ~4 h 未跑。**【原论文】非最优**：小流 vs HPCC **−7.6%** 等 |
-| **Fig. 11** HPCC vs HPCC* | 按流大小 avg/p99 FCT slowdown | **未复现** | `figures/fig11.pdf` | 【原论文】**Hadoop**：相对 HPCC **−23.3%**、HPCC* **−15.9%** |
-| **Fig. 12** 训练/集合通信 | 归一化平均完成时间（ring/a2a±spray） | **未复现**（有脚本/notebook/PDF） | `figures/fig12.pdf`；`experiments/fig12/`；notebook 内嵌输出 | 未本轮重跑 |
+| **Fig. 8** 参考状态机制消融 | 两流速率轨迹 | **【复现】已重跑** | `fig8a/b_rerun.json`；`fig8a/b_summary.json`。官方 PDF 仅在上游 | thr **79.13 / 85.79 Gbps**；~1.8 / 1.4 s。8a 与仓库 identical；8b 无 prior warehouse |
+| **Fig. 9** BLS/控制消融 | 吞吐、队列长度 | **【复现】已重跑** | `fig9a/b_rerun.json`；`fig9a/b_summary.json`。官方 PDF 仅在上游 | thr **87.91 / 92.54 Gbps**；~2.3 / 2.1 s。9a 与仓库 identical；9b 无 prior warehouse |
+| **Fig. 10** 大规模真实 workload | 平均/尾 FCT slowdown（CacheFollower 等） | **未复现** | 上游 `figures/fig10*` / `experiments/fig10*`（不在本仓） | 全套 fat-tree ~4 h 未跑。**【原论文】非最优**：小流 vs HPCC **−7.6%** 等 |
+| **Fig. 11** HPCC vs HPCC* | 按流大小 avg/p99 FCT slowdown | **未复现** | 上游 `figures/fig11.pdf`（不在本仓） | 【原论文】**Hadoop**：相对 HPCC **−23.3%**、HPCC* **−15.9%** |
+| **Fig. 12** 训练/集合通信 | 归一化平均完成时间（ring/a2a±spray） | **未复现**（上游有脚本/notebook/PDF） | 上游 `figures/fig12.pdf`；`experiments/fig12/` | 未本轮重跑 |
 | **Table 2 / §5** 端侧开销 | cycles/ACK、每流状态字节 | **未复现** | 仅【原论文】 | ~34/52 cycles/ACK；额外 ~36 B/流。无 DPDK/RNIC 基准 |
 | **【扩展】E3/E5/F1 等**（非论文图） | 利用率、份额/Jain、队列 KB | **扩展探针，非官方复现** | `results/e*.csv`、`f1_*.csv`；`figs/` | E5 coupled：份额 ≈16.3/83.7，Jain **0.688**（非最优侧证） |
 
@@ -101,8 +101,7 @@
 |---|---|
 | `official_repro/SUMMARY.md` / `PROVENANCE.md` | 最小复现条结论与 provenance |
 | `official_repro/fig{1,2,3}_metrics.json`、`fig{1_*,2,3,8a,8b,9a,9b}_rerun*.json`、`summaries/` | 指标与重跑产物 |
-| `official_repro/compare_fig*.png` | Fig.1/2 对照图 |
-| `EVALUATION_COVERAGE.md` | 稍早版覆盖表 |
-| `REPORT_OSCAR_FINAL.md` §4 / §4.1 | 报告内 Evaluation 地图 |
-| `<OSCAR_NS3_ROOT>/config/oscar-nsdi26/figures/` | 官方 PDF 图 |
+| `official_repro/compare_fig*.png` | Fig.1/2 对照图（**prior warehouse overlays**，非本轮新渲） |
+| `EVALUATION_COVERAGE.md` | Evaluation 覆盖表 |
+| `<OSCAR_NS3_ROOT>/config/oscar-nsdi26/figures/` | 官方 PDF 图（仅上游；本仓不发布） |
 | `<OSCAR_NS3_ROOT>/config/oscar-nsdi26/experiments/` | 官方实验 JSON + `run_all.sh` |
